@@ -95,30 +95,8 @@ class SLL {
         return this;
     }
 }
-function minToFront(list){
-    var helper = list.head
-    var runner = helper.next;
-    while(runner){
-        if(runner.data < helper.data){
-            helper = runner
-            console.log("HELPER", helper.data)
-            runner = runner.next;
-        }
-        else{
-            runner = runner.next;
-        }
-        
-    }
-    // helper.next = list.head;
-    // list.head = helper;
-    console.log(`the head node is now ${list.head.data}`)
-    list.display();
-    return list;
-}
 
-// if(!this.head){
-//     return nodeCount;
-// }
+
 
 
 
